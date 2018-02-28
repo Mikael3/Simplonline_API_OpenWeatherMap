@@ -15,6 +15,7 @@ body {
     color: white;
     height: 36px;
     font-size: 18px;
+    margin-top: 32px;
 }
 
 #valider{
@@ -23,15 +24,9 @@ body {
     width: 92px;
     color: #00796B;
     font-size: 15px;
+    margin-top: 14px;
 }
 
-@media all and (max-width: 375px) {
-
-    #valider { 
-       font-size: 1em; 
-    }
- 
- }
 
 .valider{
     padding-left: 42%;
@@ -40,75 +35,26 @@ body {
 
 #thedate{
     padding-top: 3%;
-    padding-left: 39%;
     color: white;
     font-size: 25px;
 }
 
-@media all and (max-width: 375px) {
 
-    #thedate { 
-       font-size: 1em; 
-    }
- 
- }
-
- @media all and (max-width: 414px) {
-
-    #thedate { 
-       font-size: 1em; 
-    }
- 
- }
 
 .temperature {
     color: white;
     float: left;
-    padding-top: 11%;
-    padding-left: 28%;
     font-size: 127px;
+    padding-top: 10%;
+    padding-left: 4%;
 }
 
-@media all and (max-width: 375px) {
 
-    .temperature { 
-        font-size: 10px;
-        padding-right: 10%; 
-    }
- 
- }
-
- @media all and (max-width: 414px) {
-
-    .temperature { 
-        font-size: 57px;
-        padding-left: 19%;
-        padding-top: 18%;
-    }
- 
- }
 
 .text {
     color: white;
     float: right;
-    padding-top: 9%;
-    padding-right: 20%;
+    padding-top: 13%;
+    padding-right: 5%;
 }
 
-@media all and (max-width: 375px) {
-
-    .text { 
-        font-size: 10px;
-        padding-right: 10%; 
-    }
- 
- }
-
- @media all and (max-width: 414px) {
-
-    .text { 
-        font-size: 12px;
-        padding-right: 10%; 
-    }
- 
- }

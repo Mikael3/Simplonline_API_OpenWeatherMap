@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- link to bootstrap cdn must appear before the script CSS -->
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/bootstrap/3.3.7/CSS/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- link to bootstrap cdn must appear before the script CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
 
-       
-   </head>
 
-   <body>
-        <div id= "input">
-                <input type= "text" placeholder= "Search..." class= "input" id="ville">
+</head>
 
+<body>
+
+    <div class="container">
+            <div class="row">
+                
+
+        <div id="input">
+            <input type="text" placeholder="Search..." class="input" id="ville">
         </div>
-        
+
         <br>
+            
+        <div class="valider">
+            <button id="valider" onclick="click()">Valider</button>
+       
+             </div>
+
+            </div>
         
-        <div class= "valider">
-                <button id = "valider" onclick = "click()">Valider</button>
 
-        </div>
+            <div class="container text-center">
+            <label id= "thedate"></label>
+         </div>
+    
+           
 
-
-
-        <div id= "thedate"> </div>
+            <div class="col">
 
         <div class="temperature">7°</div>
+            </div>
 
-        <div class= "text">
+            <div class="col">
+
+        <div class="text">
 
             <p>Température max:</p>
             <p>Température min:</p>
@@ -42,13 +56,19 @@
             <p>Vitesse du vent:</p>
             <p>Humidité:</p>
 
+            </div>   
+        
         </div>
 
+        <div id=show></div>
+        <div id=error></div>
 
+    </div>
 
-        <script src="jquery.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://ekladata.com/pcsyQ3tk8KLClKiT8Hit03-VGFg/moment-with-locales.js"></script>
-        <script src="app.js"></script>
-   </body>    
-</html>   
+    <script src="jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ekladata.com/pcsyQ3tk8KLClKiT8Hit03-VGFg/moment-with-locales.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
