@@ -25,6 +25,14 @@ body {
     font-size: 15px;
 }
 
+@media all and (max-width: 375px) {
+
+    #valider { 
+       font-size: 1em; 
+    }
+ 
+ }
+
 .valider{
     padding-left: 42%;
     width: 3%;
@@ -37,9 +45,70 @@ body {
     font-size: 25px;
 }
 
+@media all and (max-width: 375px) {
+
+    #thedate { 
+       font-size: 1em; 
+    }
+ 
+ }
+
+ @media all and (max-width: 414px) {
+
+    #thedate { 
+       font-size: 1em; 
+    }
+ 
+ }
+
+.temperature {
+    color: white;
+    float: left;
+    padding-top: 11%;
+    padding-left: 28%;
+    font-size: 127px;
+}
+
+@media all and (max-width: 375px) {
+
+    .temperature { 
+        font-size: 10px;
+        padding-right: 10%; 
+    }
+ 
+ }
+
+ @media all and (max-width: 414px) {
+
+    .temperature { 
+        font-size: 57px;
+        padding-left: 19%;
+        padding-top: 18%;
+    }
+ 
+ }
+
 .text {
     color: white;
     float: right;
     padding-top: 9%;
     padding-right: 20%;
 }
+
+@media all and (max-width: 375px) {
+
+    .text { 
+        font-size: 10px;
+        padding-right: 10%; 
+    }
+ 
+ }
+
+ @media all and (max-width: 414px) {
+
+    .text { 
+        font-size: 12px;
+        padding-right: 10%; 
+    }
+ 
+ }

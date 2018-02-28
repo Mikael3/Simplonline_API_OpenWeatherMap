@@ -5,15 +5,19 @@
         <title></title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <!-- link to bootstrap cdn must appear before the script CSS -->
+
         <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/bootstrap/3.3.7/CSS/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
 
        
    </head>
 
    <body>
         <div id= "input">
-                <input type= "text" placeholder= "Search..." class= "input">
+                <input type= "text" placeholder= "Search..." class= "input" id="ville">
 
         </div>
         
@@ -28,7 +32,10 @@
 
         <div id= "thedate"> </div>
 
+        <div class="temperature">7°</div>
+
         <div class= "text">
+
             <p>Température max:</p>
             <p>Température min:</p>
             <p>Pression atmosphérique:</p>
@@ -39,9 +46,9 @@
 
 
 
-        <script src= "jquery.js"></script>
+        <script src="jquery.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="http://ekladata.com/pcsyQ3tk8KLClKiT8Hit03-VGFg/moment-with-locales.js"></script>
-        <script src= "app.js"></script>
+        <script src="app.js"></script>
    </body>    
 </html>   

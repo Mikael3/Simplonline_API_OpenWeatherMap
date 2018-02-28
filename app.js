@@ -1,38 +1,46 @@
-
-
-moment.locale('fr');
-$("#thedate").text(moment().format('LL'));
+$(document).ready(function () {
 
 
 
-$(document).ready(function(){
-    $('#valider').click(function(){
-        var city= $("#city").val();
-        
-        if (city!= ''){
+    moment.locale('fr');
+    $("#thedate").text(moment().format('LL'));
+
+
+
+    $('#valider').click(function () {
+        var city = $("#ville").val();
+
+        if (city != '') {
             $.ajax({
-                url:"http://api.openweathermap.org/data/2.5/weather?q=Pamiers&APPID=12ef118e06c5144d0c39c6dd01114989",
 
-            type:"GET",
-            dataType: "jsonp",
+                url: 'http://api.openweathermap.org/data/2.5/weather?q=' + city + "&units=metric" + "&APPID=12ef118e06c5144d0c39c6dd01114989",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                  console.log(data);
+                }
+            });
 
-            success: function (data){
+        } else {
 
-            }
-        });
+            $("#error").html('field cannot be empty');
 
-    }else{
+        }
+        /*function show(data) {
+            console.log('donnee', data);
 
-        $("#error");html ('field cannot be empty');
+            return "<h3><strong>Humidity</strong>:"+data.main.humidity+"</h3>";
+        }
 
-      }
+        show();*/
+
+
     });
 });
 
 
-function show (data) {
-    return "Temperature:"+data.main.humidity+""
-}
+
+
 
 
 /*function gettingJSON(){
