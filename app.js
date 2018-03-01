@@ -17,6 +17,11 @@ $(document).ready(function () {
                 type: "GET",
                 dataType: "json",
                 success: function (data) {
+
+                    var widget = show(data);
+
+                    $("#show").html(widget);
+                    $("#city").val('');
                 
                 }
             });
@@ -29,7 +34,11 @@ $(document).ready(function () {
         function show(data) {
             console.log('donnee', data);
 
-            return "<h3><strong>Humidity</strong>:"+data.main.humidity+"</h3>";
+            return "Température:"+data.main.temp_max+"deg;C"+
+                   "Température:"+data.main.temp_min+"deg;C"+
+                   "Pression atmosphérique:"+data.main.pressure+
+                   "Vitesse du vent:"+data.wind.speed+
+                   "Humidité:"+data.main.humidity;
         }
 
         show();
