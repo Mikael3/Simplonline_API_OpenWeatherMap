@@ -18,10 +18,15 @@ $(document).ready(function () {
                 dataType: "json",
                 success: function (data) {
 
-                    var widget = show(data);
+                    var temps = montre(data)
+                    var widget = show(data)
+                    var localisation = latlon(data)
+                    
 
+                    $("#temperature").html(temps);
                     $("#show").html(widget);
                     $("#city").val('');
+                    $("latlon").html(localisation);
                 
                 }
             });
@@ -31,17 +36,29 @@ $(document).ready(function () {
             $("#error").html('field cannot be empty');
 
         }
-        function show(data) {
 
-            return ""+data.main.temp+"&deg;C"+
-                   ""+data.main.temp_max+"&deg;C"+
-                   ""+data.main.temp_min+"&deg;C"+
-                   ""+data.main.pressure+"hPa"+
-                   ""+data.wind.speed+"km/h"+
-                   ""+data.main.humidity+"%";
+        function montre(data) {
+
+            return ""+data.main.temp+"&deg;C";
+
         }
 
-        
+        function show(data) {
+
+
+            return "<h4>Température max: "+data.main.temp_max+"&deg;C</h4>"+
+                   "<h4>Température min: "+data.main.temp_min+"&deg;C</h4>"+
+                   "<h4>Pression atmosphérique: "+data.main.pressure+"hPa</h4>"+
+                   "<h4>Vitesse du vent: "+data.wind.speed+"km/h</h4>"+
+                   "<h4>Humidité: "+data.main.humidity+"%</h4>";
+        }
+
+        function latlon(data) {
+
+            return "<h2>Longitude: "+data.coord.lon+"</h2>"+
+                   "<h2>Lattitude: "+data.coord.lat+"</h2>";
+
+        }
 
 
     });
