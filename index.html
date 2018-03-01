@@ -8,7 +8,8 @@
 
     <!-- link to bootstrap cdn must appear before the script CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 
 
@@ -18,31 +19,31 @@
 <body>
 
     <div class="container">
-            <div class="row">
-                
+        <div class="row">
 
-        <div id="input">
-            <input type="text" placeholder="Search..." class="input" id="ville">
-        </div>
 
-        <br>
-            
-        <div class="valider">
-            <button id="valider" onclick="click()">Valider</button>
-       
-             </div>
+            <div id="input">
+                <input type="text" placeholder="Search..." class="input" id="ville">
+            </div>
+
+            <br>
+
+            <div class="valider">
+                <button id="valider" onclick="click()">Valider</button>
 
             </div>
+
+        </div>
+
+
+        <div class="container text-center">
+            <label id="thedate"></label>
+        </div>
+
+
         
-
-            <div class="container text-center">
-            <label id= "thedate"></label>
-         </div>
-    
-           
-
             <div class="col">
-                  <div id="temperature"></div>
+                <div id="temperature"></div>
             </div>
 
             <div class="col">
@@ -50,11 +51,11 @@
 
             </div>
 
-            <div class="row">
+            <div class="col-s">
                 <div id="latlon"></div>
             </div>
+        
 
-       
         <div id=error></div>
 
     </div>

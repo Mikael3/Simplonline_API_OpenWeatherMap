@@ -20,13 +20,13 @@ $(document).ready(function () {
 
                     var temps = montre(data)
                     var widget = show(data)
-                    var localisation = latlon(data)
+                    var localisation = locali(data)
                     
 
                     $("#temperature").html(temps);
                     $("#show").html(widget);
                     $("#city").val('');
-                    $("latlon").html(localisation);
+                    $("#latlon").html(localisation);
                 
                 }
             });
@@ -53,14 +53,15 @@ $(document).ready(function () {
                    "<h4>Humidité: "+data.main.humidity+"%</h4>";
         }
 
-        function latlon(data) {
+        function locali(data) {
 
-            return "<h2>Longitude: "+data.coord.lon+"</h2>"+
-                   "<h2>Lattitude: "+data.coord.lat+"</h2>";
+
+            return "Longitude: "+data.coord.lon+
+                   "Lattitude: "+data.coord.lat;
 
         }
 
-
+       
     });
 });
 
