@@ -31,15 +31,27 @@ body {
 .valider{
     padding-left: 42%;
     width: 3%;
+    font-family: 'Cairo', sans-serif;
 }  
 
 #thedate{
     padding-top: 3%;
     color: white;
     font-size: 25px;
+    font-family: 'Cairo', sans-serif;
 }
 
+@media all and (max-width: 474px) {
 
+    #tempeature { font-size: 14px }
+ 
+ }
+
+ @media all and (max-width: 375px) {
+
+    #temperature { font-size: 14px }
+ 
+ }
 
 #temperature {
     color: white;
@@ -47,18 +59,40 @@ body {
     font-size: 127px;
     padding-top: 10%;
     padding-left: 4%;
+    font-family: 'Cairo', sans-serif;
 }
 
+@media all and (max-width: 474px) {
 
+    #show { font-size: 14px }
+ 
+ }
+
+ @media all and (max-width: 375px) {
+
+    #show { font-size: 14px }
+ 
+ }
 
 #show {
     color: white;
     float: right;
     padding-top: 13%;
     padding-right: 5%;
+    font-family: 'Cairo', sans-serif;
 }
 
 #latlon {
     color: white;
     margin-top: 38%;
+    font-family: 'Cairo', sans-serif;
 }
+
+#map {
+    height: 100%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
