@@ -32,16 +32,16 @@ $(document).ready(function () {
 
         }
         function show(data) {
-            console.log('donnee', data);
 
-            return "Température:"+data.main.temp_max+"deg;C"+
-                   "Température:"+data.main.temp_min+"deg;C"+
-                   "Pression atmosphérique:"+data.main.pressure+
-                   "Vitesse du vent:"+data.wind.speed+
-                   "Humidité:"+data.main.humidity;
+            return ""+data.main.temp+"&deg;C"+
+                   ""+data.main.temp_max+"&deg;C"+
+                   ""+data.main.temp_min+"&deg;C"+
+                   ""+data.main.pressure+"hPa"+
+                   ""+data.wind.speed+"km/h"+
+                   ""+data.main.humidity+"%";
         }
 
-        show();
+        
 
 
     });
