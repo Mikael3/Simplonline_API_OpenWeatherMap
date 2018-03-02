@@ -12,6 +12,7 @@ body {
 .input {
     background-color: #00796B;
     border: none;
+    border-bottom: 2px solid white;
     color: white;
     height: 36px;
     font-size: 18px;
@@ -58,6 +59,7 @@ body {
     #temperature {margin-left: -24px;}
     #latlon {padding-top: 36px;}
     #latlon {margin-left: 42px;}
+    #input {padding-left: 22%;}
  }
 
  @media  (max-width: 375px) {
@@ -65,10 +67,15 @@ body {
     h4 { font-size: 13px; }
     h4 {margin-right: -30px;}
     #temperature { font-size: 45px; }
-    #temperature {font-size: 45px;}
     #temperature {margin-left: -28px;}
     #latlon {padding-top: 54px;}
     #latlon {margin-left: 36px;}
+    #input {padding-left: 22%;}
+ }
+
+ @media (max-width: 320px){
+    #temperature {font-size: 28px;}
+    #input {padding-left: 15%;}
  }
 
 #show {
