@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+//Ceci est la fonction pour la date
 
     moment.locale('fr');
     $("#thedate").text(moment().format('LL'));
