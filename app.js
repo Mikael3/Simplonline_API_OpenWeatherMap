@@ -21,7 +21,7 @@ $(document).ready(function () {
                     var temps = montre(data)
                     var widget = show(data)
                     var localisation = locali(data)
-                
+
 
 
 
@@ -30,11 +30,11 @@ $(document).ready(function () {
                     $("#city").val('');
                     $("#latlon").html(localisation);
                     $("#carte").html("<iframe src='https://www.google.com/maps/embed/v1/place?key= AIzaSyAcfzSe2X4sWubQqxq5AEnV-oBZq3rW-l0 &q=" + city + "&zoom=12&maptype=roadmap' width='100%' height='100%' frameborder='0'></iframe>");
-               
-               
-               
+
+
+
                 }
-            
+
             });
 
         } else {

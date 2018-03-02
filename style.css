@@ -41,18 +41,6 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
-@media all and (max-width: 474px) {
-
-    #tempeature { font-size: 14px }
- 
- }
-
- @media all and (max-width: 375px) {
-
-    #temperature { font-size: 14px }
- 
- }
-
 #temperature {
     color: white;
     float: left;
@@ -62,16 +50,22 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
-@media all and (max-width: 474px) {
+@media  (max-width: 474px) {
 
-    #show { font-size: 14px }
- 
+    h4 { font-size: 14px; }
+    h4 {margin-right: -41px;}
+    #temperature { font-size: 45px; }
  }
 
- @media all and (max-width: 375px) {
+ @media  (max-width: 375px) {
 
-    #show { font-size: 14px }
- 
+    h4 { font-size: 13px; }
+    h4 {margin-right: -30px;}
+    #temperature { font-size: 45px; }
+    #temperature {font-size: 45px;}
+    #temperature {margin-left: -28px;}
+    #latlon {padding-top: 54px;}
+    #latlon {margin-left: 36px;}
  }
 
 #show {
@@ -82,14 +76,16 @@ body {
     font-family: 'Cairo', sans-serif;
 }
 
+
+
 #latlon {
     color: white;
     margin-top: 38%;
     font-family: 'Cairo', sans-serif;
 }
 
-#map {
-    height: 100%;
+#carte {
+    height: 500px;
   }
   html, body {
     height: 100%;
