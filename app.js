@@ -48,7 +48,7 @@ $(document).ready(function () {
 
         function montre(data) {
 
-            return "" + data.main.temp + "&deg;C";
+            return "" +parseInt(data.main.temp) + "&deg;C";
 
         }
 
