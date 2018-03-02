@@ -55,6 +55,9 @@ body {
     h4 { font-size: 14px; }
     h4 {margin-right: -41px;}
     #temperature { font-size: 45px; }
+    #temperature {margin-left: -24px;}
+    #latlon {padding-top: 36px;}
+    #latlon {margin-left: 42px;}
  }
 
  @media  (max-width: 375px) {
