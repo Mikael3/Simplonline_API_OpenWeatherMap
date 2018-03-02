@@ -21,6 +21,7 @@ $(document).ready(function () {
                     var temps = montre(data)
                     var widget = show(data)
                     var localisation = locali(data)
+                
 
 
 
@@ -28,8 +29,12 @@ $(document).ready(function () {
                     $("#show").html(widget);
                     $("#city").val('');
                     $("#latlon").html(localisation);
-                    $("#carte").html("<iframe width='100%' height='100%' src='https://www.google.com/maps/embed/v1/view?key=AIzaSyAeoompeuaVn2-S1156RvU6t-YdMzC-Y5g&center=" + data.coord.lat + "," + data.coord.lon + "&zoom=11&maptype=satellite'></iframe>");
+                    $("#carte").html("<iframe src='https://www.google.com/maps/embed/v1/place?key= AIzaSyAcfzSe2X4sWubQqxq5AEnV-oBZq3rW-l0 &q=" + city + "&zoom=12&maptype=roadmap' width='100%' height='100%' frameborder='0'></iframe>");
+               
+               
+               
                 }
+            
             });
 
         } else {
@@ -61,49 +66,6 @@ $(document).ready(function () {
                 "Lattitude: " + data.coord.lat;
 
         }
-
-        $(document).ready(function(){
-            //Je charge les données de Pamiers (grâce à la value de l'input) lors du chargement de la page
-            meteo(ville);
-            //Je conditione ma fonction à l'appui sur le bouton valider
-            $("#valider").click(function(){
-                ville = $("#ville").val();
-                meteo(ville);
-            })
-            //Je conditionne ma fonction à la pression de la touche entrée
-            $("#ville").keypress(function(e){
-                  if ( e.keyCode == 13 ) {
-                    ville = $("#ville").val();
-                    meteo(ville);
-                  }
-        });
-
-        /*function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 8,
-                center: { lat: -34.397, lng: 150.644 }
-            });
-            var geocoder = new google.maps.Geocoder();
-
-            document.getElementById('valider').addEventListener('click', function () {
-                geocodeAddress(geocoder, map);
-            });
-        }
-
-        function geocodeAddress(geocoder, resultsMap) {
-            var address = document.getElementById('ville').value;
-            geocoder.geocode({ 'ville': address }, function (results, status) {
-                if (status === 'OK') {
-                    resultsMap.setCenter(results[0].geometry.location);
-                    var marker = new google.maps.Marker({
-                        map: resultsMap,
-                        position: results[0].geometry.location
-                    });
-                } else {
-                    alert('Geocode was not successful for the following reason: ' + status);
-                }
-            });
-        }*/
     });
 })
-});
+
