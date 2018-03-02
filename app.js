@@ -1,13 +1,16 @@
 $(document).ready(function () {
 
-//Ceci est la fonction pour la date
+//affiche la date
 
     moment.locale('fr');
     $("#thedate").text(moment().format('LL'));
 
 
 
+ //En cliquant sur le bouton valider on affiche les données relatives au nom renseigné
+
     $('#valider').click(function () {
+        //afficher les données météo et la carte 
         var city = $("#ville").val();
 
         if (city != '') {
